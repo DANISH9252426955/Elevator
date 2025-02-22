@@ -1,0 +1,261 @@
+import java.util.Scanner;
+
+class Mall{
+  String demo;
+  public String mallname;
+  Scanner sx=new Scanner(System.in);
+   
+    Mall(String name){
+        this.mallname=name;
+        String temp=mallname.toLowerCase();
+       switch (temp) {
+        case "1" :
+        Mall.Mallofjaipur();
+        break;
+        case "2":
+        Mall.JTMmall();
+        break;
+        default:
+        System.out.println("This is Mall is not available in my list");
+            break;
+       }
+       
+       
+
+    }
+
+    public static void Mallofjaipur(){
+        Scanner sx=new Scanner(System.in);
+        System.out.println("Welcome to Mall of Jaipur:---");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "Code", "Floor Name");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "1", "First Floor (Trends)");
+        System.out.printf("| %-15s | %-30s |\n", "2", "Second Floor (Canteen)");
+        System.out.printf("| %-15s | %-30s |\n", "3", "Third Floor (PVR)");
+        System.out.printf("| %-15s | %-30s |\n", "4", "Fourth Floor (Electronic Items)");
+        System.out.printf("| %-15s | %-30s |\n", "5", "Fifth Floor (Gaming Zone)");
+        System.out.printf("| %-15s | %-30s |\n", "6", "Sixth Floor (Furniture Shop)");
+        System.out.printf("| %-15s | %-30s |\n", "7", "Seventh Floor (Softraw IT Solutions)");
+        System.out.printf("| %-15s | %-30s |\n", "8", "Eighth Floor (Rosado Cafe)");
+        System.out.println("----------------------------------------");
+        System.out.println("Where do you want to go:-");
+        String demo=sx.nextLine();
+        switch (demo) {
+            case "1":
+            System.out.println("It is First Floor Welcome to trend");
+            break;
+            case "2":
+            System.out.println("It is Second Floor Welcome to Canteen");
+            break;
+            case "3":
+            System.out.println("It is Third Floor PVR Office number is 323");
+            break;
+            case "4":
+            System.out.println("It is Fourth Floor Electronic Shope number is 410");
+            break;
+            case "5":
+            System.out.println("It is Fifth Floor Gaming zone Shope number is 501");
+            break;
+            case"6":
+            System.out.println("It is Sixth Floor Furniture Shop number is 621");
+            break;
+            case"7":
+            System.out.println("It is Seventh Floor Softraw IT Solutions Office number is 721");
+            break;
+            default:
+            System.out.println("Sorry Its Floor is not Aavailable in  Mall of aipur");
+                break;
+        }
+ }
+ public static void JTMmall(){
+    Scanner sx=new Scanner(System.in);
+    System.out.println("Welcome to Jagatpura Mall :---");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "Code", "Floor Name");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "1", "First Floor (Indian Bank Zonal Office)");
+        System.out.printf("| %-15s | %-30s |\n", "2", "Second Floor (Gayatri Security Services Pvt Ltd)");
+        System.out.printf("| %-15s | %-30s |\n", "3", "Third Floor (INOX Cinema)");
+        System.out.printf("| %-15s | %-30s |\n", "4", "Fourth Floor (AndWeSupport)");
+        System.out.printf("| %-15s | %-30s |\n", "5", "Fifth Floor (M S Technology)");
+        System.out.println("----------------------------------------");
+    System.out.println("Where do you want to go:-");
+    String demo=sx.nextLine();
+    switch (demo) {
+        case "1":
+        System.out.println("It is First Floor Indian Bank Zonal Office Number is 101");
+        break;
+        case "2":
+        System.out.println("It is Second Floor Gayatri Security Services Pvt Ltd Office Number is 201");
+        break;
+        case "3":
+        System.out.println("It is Third Floor  Welcome in INOX Cinema");
+        break;
+        case "4":
+        System.out.println("It is Fourth Floor AndWeSupport Office number is 490");
+        break;
+        case"5":
+        System.out.println("It is Fifth Floor M S Technology Office number is 500");
+        break;
+        default:
+        System.out.println("Sorry Its Floor is not Aavailable in  Jagatpura Mall");
+            break;
+    }
+}
+
+
+
+
+    }
+
+public class  Elevator{
+    public static void main(String[] args) {
+        Scanner sx=new Scanner(System.in);
+        System.out.println("Available Mall in jaipur:----");
+        System.out.println("------------------");
+        System.out.printf("| %-15s |\n", "Mall Name");
+        System.out.println("------------------");
+        System.out.printf("| %-15s |\n",  "Mall of Jaipur");
+        System.out.printf("| %-15s |\n","JTM Mall");
+        System.out.println("------------------");
+        
+
+
+
+        System.out.println("Enter the mall Which you want to go:-");
+        String level=sx.nextLine();
+
+        Mall m1=new Mall(level);   
+    }
+}import java.util.Scanner;
+
+class Mall{
+  String demo;
+  public String mallname;
+  Scanner sx=new Scanner(System.in);
+   
+    Mall(String name){
+        this.mallname=name;
+        String temp=mallname.toLowerCase();
+       switch (temp) {
+        case "1" :
+        Mall.Mallofjaipur();
+        break;
+        case "2":
+        Mall.JTMmall();
+        break;
+        default:
+        System.out.println("This is Mall is not available in my list");
+            break;
+       }
+       
+       
+
+    }
+
+    public static void Mallofjaipur(){
+        Scanner sx=new Scanner(System.in);
+        System.out.println("Welcome to Mall of Jaipur:---");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "Code", "Floor Name");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "1", "First Floor (Trends)");
+        System.out.printf("| %-15s | %-30s |\n", "2", "Second Floor (Canteen)");
+        System.out.printf("| %-15s | %-30s |\n", "3", "Third Floor (PVR)");
+        System.out.printf("| %-15s | %-30s |\n", "4", "Fourth Floor (Electronic Items)");
+        System.out.printf("| %-15s | %-30s |\n", "5", "Fifth Floor (Gaming Zone)");
+        System.out.printf("| %-15s | %-30s |\n", "6", "Sixth Floor (Furniture Shop)");
+        System.out.printf("| %-15s | %-30s |\n", "7", "Seventh Floor (Softraw IT Solutions)");
+        System.out.printf("| %-15s | %-30s |\n", "8", "Eighth Floor (Rosado Cafe)");
+        System.out.println("----------------------------------------");
+        System.out.println("Where do you want to go:-");
+        String demo=sx.nextLine();
+        switch (demo) {
+            case "1":
+            System.out.println("It is First Floor Welcome to trend");
+            break;
+            case "2":
+            System.out.println("It is Second Floor Welcome to Canteen");
+            break;
+            case "3":
+            System.out.println("It is Third Floor PVR Office number is 323");
+            break;
+            case "4":
+            System.out.println("It is Fourth Floor Electronic Shope number is 410");
+            break;
+            case "5":
+            System.out.println("It is Fifth Floor Gaming zone Shope number is 501");
+            break;
+            case"6":
+            System.out.println("It is Sixth Floor Furniture Shop number is 621");
+            break;
+            case"7":
+            System.out.println("It is Seventh Floor Softraw IT Solutions Office number is 721");
+            break;
+            default:
+            System.out.println("Sorry Its Floor is not Aavailable in  Mall of aipur");
+                break;
+        }
+ }
+ public static void JTMmall(){
+    Scanner sx=new Scanner(System.in);
+    System.out.println("Welcome to Jagatpura Mall :---");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "Code", "Floor Name");
+        System.out.println("----------------------------------------------------");
+        System.out.printf("| %-15s | %-30s |\n", "1", "First Floor (Indian Bank Zonal Office)");
+        System.out.printf("| %-15s | %-30s |\n", "2", "Second Floor (Gayatri Security Services Pvt Ltd)");
+        System.out.printf("| %-15s | %-30s |\n", "3", "Third Floor (INOX Cinema)");
+        System.out.printf("| %-15s | %-30s |\n", "4", "Fourth Floor (AndWeSupport)");
+        System.out.printf("| %-15s | %-30s |\n", "5", "Fifth Floor (M S Technology)");
+        System.out.println("----------------------------------------");
+    System.out.println("Where do you want to go:-");
+    String demo=sx.nextLine();
+    switch (demo) {
+        case "1":
+        System.out.println("It is First Floor Indian Bank Zonal Office Number is 101");
+        break;
+        case "2":
+        System.out.println("It is Second Floor Gayatri Security Services Pvt Ltd Office Number is 201");
+        break;
+        case "3":
+        System.out.println("It is Third Floor  Welcome in INOX Cinema");
+        break;
+        case "4":
+        System.out.println("It is Fourth Floor AndWeSupport Office number is 490");
+        break;
+        case"5":
+        System.out.println("It is Fifth Floor M S Technology Office number is 500");
+        break;
+        default:
+        System.out.println("Sorry Its Floor is not Aavailable in  Jagatpura Mall");
+            break;
+    }
+}
+
+
+
+
+    }
+
+public class  Elevator{
+    public static void main(String[] args) {
+        Scanner sx=new Scanner(System.in);
+        System.out.println("Available Mall in jaipur:----");
+        System.out.println("------------------");
+        System.out.printf("| %-15s |\n", "Mall Name");
+        System.out.println("------------------");
+        System.out.printf("| %-15s |\n",  "Mall of Jaipur");
+        System.out.printf("| %-15s |\n","JTM Mall");
+        System.out.println("------------------");
+        
+
+
+
+        System.out.println("Enter the mall Which you want to go:-");
+        String level=sx.nextLine();
+
+        Mall m1=new Mall(level);   
+    }
+}
